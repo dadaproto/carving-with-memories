@@ -11,4 +11,7 @@
   --vertical-space-lg: 60px;
   --vertical-space-sm: 40px;
   --main-border: 1px solid rgba(0, 0, 0, 0.1);
+  --main-content-width: 86%;
+  --header-font: "minion-3", serif;
+  --body-font: "nunito-sans", sans-serif;
 }
