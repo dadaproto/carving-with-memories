@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .main-section__row:nth-child(odd) {
