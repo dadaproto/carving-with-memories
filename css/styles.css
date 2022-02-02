@@ -9,6 +9,10 @@
 /* Screens */
 @import "screens/landing.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--grey);
   font-family: "Open Sans", sans-serif;
