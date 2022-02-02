@@ -1,0 +1,14 @@
+:root {
+  --yellow: #fae100;
+  --opening-blue: #6777de;
+  --hair-blue: #2c358e;
+  --ocean-blue: #056ac0;
+  --sunset-pink: #f29eb9;
+  --grey: #c8c8c8;
+  --house-color: #e0d9c7;
+  --horizontal-space: 25px;
+  --vertical-space: 100px;
+  --vertical-space-lg: 60px;
+  --vertical-space-sm: 40px;
+  --main-border: 1px solid rgba(0, 0, 0, 0.1);
+}

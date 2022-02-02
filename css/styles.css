@@ -1,0 +1,21 @@
+@import url("https://use.typekit.net/frd4hsg.css");
+
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/navbar.css";
+
+/* Screens */
+@import "screens/landing.css";
+
+body {
+  color: var(--grey);
+  font-family: "Open Sans", sans-serif;
+  background-color: #131313;
+}
+
+.main-section {
+  padding: 0 var(--horizontal-space);
+  box-sizing: border-box;
+}
