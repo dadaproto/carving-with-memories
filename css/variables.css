@@ -12,6 +12,7 @@
   --vertical-space-sm: 40px;
   --main-border: 1px solid rgba(0, 0, 0, 0.1);
   --main-content-width: 86%;
+  --mobile-content-width: 96%;
   --header-font: "minion-3", serif;
   --body-font: "nunito-sans", sans-serif;
 }
