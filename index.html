@@ -104,11 +104,23 @@
         <span class="main-section__subtitle">Carving With Memories</span>
         <h1 class="main-section__title">Ihyangjeong</h1>
       </div>
-      <div class="main-section__row main-section__row--content">
+      <div
+        class="main-section__row main-section__row--content youtube-video-container"
+      >
         <!-- <div class="main-section__row main-section__row--content">
         <img src="assets/landscape_03.jpg" /> -->
 
-        <div id="player"></div>
+        <!-- <div id="player"></div> -->
+        <!-- <div class="youtube-video-container"> -->
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/YSuan6wFU1A"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <!-- </div> -->
       </div>
     </div>
     <div id="about" class="main-section">
@@ -217,48 +229,5 @@
       src="https://kit.fontawesome.com/6f7d0583a0.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement("script");
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName("script")[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player("player", {
-          height: "720",
-          width: "1280",
-          videoId: "YSuan6wFU1A",
-          playerVars: {
-            controls: 0,
-            playsinline: 1,
-          },
-          events: {
-            onReady: onPlayerReady,
-            onStateChange: onPlayerStateChange,
-          },
-        });
-      }
-
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
-    </script>
   </body>
 </html>
